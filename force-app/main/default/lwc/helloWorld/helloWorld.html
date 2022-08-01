@@ -1,8 +1,12 @@
 <template>
-    <lightning-card title="HelloWorld" icon-name="custom:custom14">
-      <div class="slds-m-around_medium">
-        <p>Hello, {greeting}!</p>
-        <lightning-input label="Nameeee" value={greeting} onchange={changeHandler}></lightning-input>
-      </div>
-    </lightning-card>
-  </template>
+  <lightning-card>
+      <h3 slot="title">
+          <lightning-icon icon-name="standard:account" size="small"></lightning-icon> Premier test Quiz NBS       
+      </h3>                     
+     
+      <lightning-datatable data={accData} columns={columnTable} key-field="Id"></lightning-datatable>
+
+  <lightning-button label="getAccountsss" onclick={getAccountLists} ></lightning-button>
+
+  </lightning-card>
+</template>

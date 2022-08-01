@@ -1,0 +1,22 @@
+
+
+<apex:page>
+  <h1>Congratulations</h1>
+  This is your new Page WireObj
+    <apex:includeLightning />
+
+    <div id="lightning" />
+
+    <script>
+        $Lightning.use("c:NBStestAura", function() {
+          $Lightning.createComponent("c:wiretest",
+              { label : "Press Me!" },
+              "lightning",
+              function(cmp) {
+                
+                // do some stuff
+              }
+          );
+        });
+    </script>
+</apex:page>
